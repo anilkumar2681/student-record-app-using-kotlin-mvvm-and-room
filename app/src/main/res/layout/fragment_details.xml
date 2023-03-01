@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.DetailsFragment">
+
+    <data>
+
+        <variable
+            name="detailsFragment"
+            type="com.team42.student_record_app.ui.fragments.DetailsFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/details_item_bg"
+            android:orientation="vertical"
+            android:padding="08dp">
+
+            <TextView
+                android:id="@+id/txtNewRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/student_details"
+                android:textColor="@color/army_green"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="08dp"
+                android:background="@drawable/ic_logo_" />
+
+            <TextView
+                android:id="@+id/lblStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="08dp"
+                android:layout_marginEnd="16dp"
+                android:padding="04dp"
+                android:text="@string/stu_name"
+                android:textAllCaps="false"
+                android:textColor="@color/army_green"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/txt_background"
+                android:gravity="center_vertical"
+                android:paddingStart="08dp"
+                android:paddingEnd="08dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/lblRollNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="04dp"
+                android:text="@string/stu_roll_number"
+                android:textAllCaps="false"
+                android:textColor="@color/army_green"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtRollNumber"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/txt_background"
+                android:gravity="center_vertical"
+                android:paddingStart="08dp"
+                android:paddingEnd="08dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lblStudentClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="04dp"
+                android:text="@string/stu_class"
+                android:textAllCaps="false"
+                android:textColor="@color/army_green"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edt_background">
+
+                <TextView
+                    android:id="@+id/txtClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingStart="08dp"
+                    android:paddingEnd="08dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/lblMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="04dp"
+                android:text="@string/stu_mobile"
+                android:textAllCaps="false"
+                android:textColor="@color/army_green"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/txtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/txt_background"
+                android:gravity="center_vertical"
+                android:paddingStart="08dp"
+                android:paddingEnd="08dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lblDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="04dp"
+                android:text="@string/dob"
+                android:textAllCaps="false"
+                android:textColor="@color/army_green"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/txtDob"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/txt_background"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:paddingStart="08dp"
+                android:paddingEnd="08dp"
+                android:textColor="@color/army_green"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/saveButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/txtSaveButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/update"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="05dp"
+                    android:layout_height="44dp" />
+
+                <RelativeLayout
+                    android:id="@+id/deleteButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/txtDeleteButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/delete"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

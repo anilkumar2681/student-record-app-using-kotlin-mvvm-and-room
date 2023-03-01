@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "student_records")
+@Entity(tableName = "student_records", primaryKeys = ["rollNumber"])
 data class Student(
     @ColumnInfo(name = "studentName")
     var studentName: String,
@@ -12,7 +12,6 @@ data class Student(
     var rollNumber: String,
     @ColumnInfo(name = "studentClass")
     var studentClass: String,
-) {
-    @PrimaryKey(autoGenerate = true)
-    var id = 0
-}
+    @ColumnInfo(name = "mobileNumber")
+    var mobileNumber: String
+)

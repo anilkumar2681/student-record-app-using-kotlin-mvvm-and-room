@@ -1,6 +1,7 @@
 package com.team42.student_record_app.viewmodel
 
 import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -10,10 +11,10 @@ import com.team42.student_record_app.room.StudentDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class StudentViewModel(application: Application) : ViewModel() {
+class StudentViewModel(application: Application) : AndroidViewModel(application) {
 
     //creating a variable for all students list and repository
-    private val allStudents: LiveData<List<Student>>
+    val allStudents: LiveData<List<Student>>
     private val repository: StudentRepository
 
     init {

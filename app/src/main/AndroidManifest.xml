@@ -3,16 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".app.StudentRecordApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo_"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentRecordApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,5 +1,25 @@
 <resources>
     <string name="app_name">Student-Record-App</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="no_data_found">No Record Found \nClick <b> + New Record </b> Button To Add</string>
+    <string name="new_record">New Record</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="student_name"><b>Name :</b></string>
+    <string name="student_class"><b>Class :</b></string>
+    <string name="student_roll_no"><b>Roll No :</b></string>
+    <string name="student_mobile_no"><b>Mobile No :</b></string>
+    <string name="student_record"><b>Student Record</b></string>
+    <string name="add_new_record">Add New Record</string>
+    <string name="student_details">Student Details</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="stu_name">Student Name</string>
+    <string name="stu_mobile">Mobile Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="stu_class">Student Class</string>
+    <string name="stu_roll_number">Roll Number</string>
+    <string name="stud_class">Class</string>
+    <string name="delete">Delete</string>
+    <string name="delete_message">Are you sure you want to Delete?</string>
+    <string name="delete_title"><b>Delete Confirmation</b></string>
 </resources>

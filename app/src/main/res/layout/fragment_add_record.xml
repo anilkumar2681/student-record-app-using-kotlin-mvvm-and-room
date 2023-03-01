@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.AddRecordFragment">
+
+
+    <data>
+
+        <variable
+            name="addRecordFragment"
+            type="com.team42.student_record_app.ui.fragments.AddRecordFragment" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/details_item_bg"
+                android:orientation="vertical"
+                android:padding="08dp">
+
+                <TextView
+                    android:id="@+id/txtNewRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/add_new_record"
+                    android:textColor="@color/army_green"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="08dp"
+                    android:background="@drawable/ic_logo_" />
+
+                <TextView
+                    android:id="@+id/txtStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="08dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="04dp"
+                    android:text="@string/stu_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/army_green"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edt_background"
+                    android:hint="@string/stu_name"
+                    android:inputType="textCapWords"
+                    android:paddingStart="08dp"
+                    android:textColor="@color/army_green"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/txtRollNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="04dp"
+                    android:text="@string/stu_roll_number"
+                    android:textAllCaps="false"
+                    android:textColor="@color/army_green"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtRollNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edt_background"
+                    android:hint="@string/stu_roll_number"
+                    android:inputType="number"
+                    android:paddingStart="08dp"
+                    android:textColor="@color/army_green"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtStudentClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="04dp"
+                    android:text="@string/stu_class"
+                    android:textAllCaps="false"
+                    android:textColor="@color/army_green"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edt_background">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:hint="@string/stud_class"
+                        android:paddingStart="08dp"
+                        android:paddingEnd="08dp"
+                        android:textColor="@color/army_green"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txtvehicleCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="04dp"
+                    android:text="@string/stu_mobile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/army_green"
+                    android:textSize="15sp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edt_background"
+                    android:hint="@string/stu_mobile"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="08dp"
+                    android:textColor="@color/army_green"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="04dp"
+                    android:text="@string/dob"
+                    android:textAllCaps="false"
+                    android:textColor="@color/army_green"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/edtDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edt_background"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/stu_mobile"
+                    android:paddingStart="08dp"
+                    android:paddingEnd="08dp"
+                    android:textColor="@color/army_green"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/txtSaveButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/save"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
